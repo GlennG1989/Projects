@@ -1,0 +1,1 @@
+these are projects i'm working on to further investigate all the tools Angular has to offer

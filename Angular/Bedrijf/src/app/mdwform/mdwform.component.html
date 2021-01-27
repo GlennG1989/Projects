@@ -1,0 +1,9 @@
+
+<h3 class="mt-5">Medewerkers</h3>
+
+<div class="d-flex justify-content-end">
+<button class="btn btn-success mt-3"  routerLink="new">+ nieuwe gebruiker</button>
+</div>
+<div *ngFor='let mw of medewerkers'>
+    <app-medewerker (refresh)="refreshMedewerkers($event)" [medewerker]='mw'></app-medewerker>
+</div>

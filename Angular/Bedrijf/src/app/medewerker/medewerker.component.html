@@ -1,0 +1,15 @@
+<div class="card my-3 rounded border-primary">
+  <div class="row no-gutters">
+    <div class="col-md-9">
+      <div class="card-body">
+        <h5 class="card-title">Naam: {{ medewerker.naam }}</h5>
+        <p class="card-text">E- mail: {{ medewerker.email}}</p>
+        <p class="card-text">Id: ({{medewerker.id}})</p>
+        <button (click)="verwijderMedewerker(medewerker.id)" class="btn btn-primary">verwijderen</button>
+      </div>
+    </div>
+    <div class="col-md-3 d-flex justify-content-center align-items-center">
+      <img [src]="medewerker.afbeelding" alt="..." class="w-50">
+    </div>
+  </div>
+</div>

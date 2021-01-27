@@ -1,0 +1,23 @@
+
+<h3 class="mt-2">Medewerkers</h3>
+
+
+
+<form>
+    <div class="form-group mt-2">
+        <label for="medewerker">Medewerker</label>
+        <input type="text" class="form-control" id="medewerkerid"  name="naam" [(ngModel)]='naam'>
+    </div>
+    <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" class="form-control" id="emailid"  [(ngModel)]="email" name="email">
+    </div>
+    <div class="form-group">
+        <label for="afbeelding">Afbeelding</label>
+        <input type="tekst" class="form-control" id="afbeeldingid" name="afbeelding" [(ngModel)]='afb'>
+    </div>
+
+    <button type="button" class="btn btn-primary mr-2" (click)='addMedewerker()'>opslaan</button>
+    <button type="button" class="btn btn-primary"  (click)='reset()'>Reset</button>
+</form>
+
